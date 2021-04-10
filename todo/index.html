@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/logo.png">
+    <script src="https://kit.fontawesome.com/cd74a34469.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container flex">
+            <figure>
+                <img src="./assets/logo.png" alt="logo">
+            </figure>
+            <h1>Esparta</h1>
+        </div>
+    </header>
+    <main>
+        <h1>TODO List</h1>
+        <div class="tasklist flex">
+            <div class="tasklist__confirmation hidden">
+                <h3>Do you want to delete the task?</h3>
+                <button type="button" id="yesRemove">Yes</button>
+                <button type="button" id="noRemove">No</button>
+            </div>
+            <div class="tasklist__ongoing column">
+                <h2>Tasks</h2>
+                <form class="flex">
+                    <input type="text" placeholder="Add a task" id="ongoing-input" required autocomplete="off">
+                    <button id="ongoing-add" type="button"><i class="fa fa-plus-circle"></i></button>
+                </form>
+                <ul id="ongoing-tasklist">
+                    <li class="tasklist__ongoing__item">
+                        <button class="ongoing-remove"><i class="fa fa-minus-circle"></i></button>
+                        <p>Learn Java</p>
+                        <button class="ongoing-to-complete"><i class="fa fa-check-circle"></i></button>
+                        <button class="complete-to-ongoing hidden"><i class="fa fa-undo"></i></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="tasklist__done column">
+                <h2>Completed</h2>
+                <ul id="done-tasklist"> 
+                    <li class="tasklist__done__item">
+                        <button class="complete-undo"><i class="fa fa-minus-circle"></i></button>
+                        <p>1-hour workout</p>
+                        <button class="ongoing-to-complete hidden"><i class="fa fa-check-circle"></i></button>
+                        <button type="button" class="complete-to-ongoing"><i class="fa fa-undo"></i>'</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
