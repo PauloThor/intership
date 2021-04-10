@@ -44,6 +44,7 @@ header h1 {
     font-size: 30px;
     position: absolute;
     right: 40px;
+    letter-spacing: 3px;
 }
 
 header figure {
